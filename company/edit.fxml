@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.EditSDT">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="770.0">
+            <children>
+                <Text layoutX="210.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập Thông Tin Người Dùng">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startY="0.5517241379310345">
+                            <stops>
+                                <Stop color="#321d15" />
+                                <Stop color="#eee474" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="name"  layoutX="280.0" layoutY="167.0"  prefHeight="43.0" prefWidth="220.0" promptText="Tên người dùng" />
+                <TextArea fx:id="sdt"  layoutX="280.0" layoutY="260.0" prefHeight="43.0" prefWidth="220.0" promptText="Số điện thoại" />
+                <Text fx:id="loi" fill="red" layoutX="280.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lỗi CMNR" visible="false" />
+                <Button contentDisplay="CENTER" layoutX="280.0" layoutY="336.0" mnemonicParsing="false" onAction="#nhaptt" text="Nhập" />
+                <Button contentDisplay="CENTER" layoutX="404.0" layoutY="336.0" mnemonicParsing="false" onAction="#ttng" text="Xem danh sách" />
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

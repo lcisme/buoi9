@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:controller="com.company.DanhSachSDT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="780.0">
+         <children>
+            <Text layoutX="99.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông Tin Người Dùng">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#eee474" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Button  layoutX="672.0" layoutY="57.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="94.0" onAction="#formthemsdt" text="Thêm SĐT"  textAlignment="CENTER">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.2512315270935961">
+                     <stops>
+                        <Stop color="#3fabc6" />
+                        <Stop color="#ff29de" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tSearch" layoutX="403.0" layoutY="70.0" promptText="Search by SĐT" />
+            <Button onAction="#search" layoutX="571.0" layoutY="57.0" mnemonicParsing="false" prefHeight="39" prefWidth="94.0" text="Search">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.2512315270935961">
+                     <stops>
+                        <Stop color="#3fabc6" />
+                        <Stop color="#ff29de" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <TableView fx:id="tXemDS" layoutX="49.0" layoutY="165.0" prefHeight="401.0" prefWidth="693.0">
+              <columns>
+                <TableColumn fx:id="tName" prefWidth="214.0" text="Tên" />
+                <TableColumn fx:id="tSDT" prefWidth="222.0" text="Số điện thoại" />
+                  <TableColumn fx:id="tEdit" prefWidth="130.0" text="Edit" />
+                  <TableColumn fx:id="tRemove" prefWidth="125.0" text="Remove" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
