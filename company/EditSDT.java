@@ -31,7 +31,7 @@ public class EditSDT {
             else{
                 int i = Main.nttList.indexOf(this.nhapTT);
                 Main.nttList.set(i,ntt);
-                System.out.println("loz");
+                System.out.println("Thành công r");
                 loi.setVisible(false);
             }
             Parent root = FXMLLoader.load(getClass().getResource("ttsdt.fxml"));
