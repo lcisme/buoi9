@@ -25,8 +25,12 @@ public class NhapTT {
     public void setRemove(Button remove) {
         this.remove = remove;
     }
-    public ArrayList<String> getSdt() {
-        return sdt;
+    public String getSdt() {
+        String s = "";
+        for (String s1:sdt){
+            s+=s1+"\n";
+        }
+        return s;
     }
     public void setSdt(ArrayList<String> sdt) {
         this.sdt = sdt;
